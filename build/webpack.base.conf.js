@@ -61,16 +61,16 @@ module.exports = {
 					limit: 10000,
 					name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
 				}
-			},
-			{
-				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
-				loader: 'babel-loader',
-				query: {
-					presets: ['es2015', 'stage-0'],
-					plugins: ['typecheck', 'syntax-flow', 'transform-flow-strip-types', 'transform-runtime'],
-				}
 			}
+//			{
+//				test: /\.js$/,
+//				exclude: /(node_modules|bower_components)/,
+//				loader: 'babel-loader',
+//				query: {
+//					presets: ['es2015', 'stage-0'],
+//					plugins: ['typecheck', 'syntax-flow', 'transform-flow-strip-types', 'transform-runtime'],
+//				}
+//			}
 
 		]
 	}
