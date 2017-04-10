@@ -1,5 +1,7 @@
 <template>
-	
+	<div>
+		nihaoa
+	</div>
 </template>
 
 <script>
