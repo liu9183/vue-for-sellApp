@@ -6,13 +6,18 @@ import goods from './components/goods/goods.vue';
 Vue.use(VueRouter);
 
 /*eslint-disabled no-new*/
-let app=Vue.extend(App);
-let router=new VueRouter();
 
-router.map({
-	'/goods':{
-		component:goods
-	}
+const router = new VueRouter({
+	routes:[
+	  {
+	  	path:'/goods',
+	    component:goods
+	  }
+	]
 });
-
-router.start(app,'#app');
+new Vue({
+	el:'#app',
+	template: '<App/>',
+	components:{ App },
+	router
+})

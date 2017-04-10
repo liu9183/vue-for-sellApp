@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="background-color: red;">
 		nihaoa
 	</div>
 </template>
