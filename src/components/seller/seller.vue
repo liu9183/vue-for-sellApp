@@ -1,13 +1,12 @@
 <template>
 	<div>
-		nihaoa
+		I am seller
 	</div>
 </template>
 
 <script>
-	 export default{};
-	
+	export default{};
 </script>
-    
+
 <style>
 </style>

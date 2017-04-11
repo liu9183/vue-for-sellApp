@@ -29,8 +29,10 @@ footer, header, menu, nav, section {
     display: block;
 }
 
-body {
+body,html {
     line-height: 1;
+    font-weight: 200;
+     font-family: "微软雅黑",arial,sans-serif;
 }
 
 blockquote, q {
