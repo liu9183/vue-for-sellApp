@@ -153,5 +153,29 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		position: relative;
+		background-color: rgba(7,17,27,0.2);
+		
+	}
+	.bulletin-wrapper>.bulletin-title{
+		display: inline-block;
+		width: 22px;
+		height: 12px;
+		background-image: url(bulletin@2x.png);
+		background-size: 22px 12px;
+		background-repeat: no-repeat;
+		vertical-align: baseline;
+		
+	}
+	.bulletin-wrapper>.bulletin-text{
+		font-size: 10px;
+		margin: 0 4px;
+		vertical-align: top;
+	}
+	.bulletin-wrapper>.icon-keyboard_arrow_right{
+		position: absolute;
+		font-size: 10px;
+		right: 12px;
+		top: 8px;
 	}
 </style>
