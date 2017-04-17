@@ -28,7 +28,7 @@ const router = new VueRouter({
 	]
 });
 
-new Vue({
+let sellapp=new Vue({
 	el:'#app',
 	template: '<App/>',
 	components:{ App },
