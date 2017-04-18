@@ -35,13 +35,14 @@
 				</li>
 			</ul>
 		</div>
+	    <shopcart :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
 	</div>
 
 </template>
 
 <script>
 	import BScroll from 'better-scroll';
-
+    import shopcart from '../shopcart/shopcart.vue'
 	const ERR_OK = 0;
 	export default {
 		props: {
@@ -128,8 +129,11 @@
 				}
 
 			}
-		}
-
+		},
+		components:{
+        	shopcart
+        }
+        
 	};
 </script>
 
