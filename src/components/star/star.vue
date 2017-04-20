@@ -75,7 +75,7 @@
 	.star-36>.star-item{
 	    width: 15px;
 	    height: 15px;
-	    margin-right: 16px;
+	    margin-right: 6px;
 	    background-size: 15px 15px;
 	    
 	}
@@ -88,7 +88,7 @@
 	.star-36>.off{
 		background-image:url(star36_off@2x.png);
 	}
-	.star-36>.star-item{
+	.star-24>.star-item{
 	    width: 10px;
 	    height: 10px;
 	    margin-right: 3px;
