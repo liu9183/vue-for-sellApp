@@ -35,4 +35,4 @@ let sellapp=new Vue({
 	router
 
 })
-router.push("/goods")
+//router.push("/goods")//……默认首页
