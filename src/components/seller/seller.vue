@@ -58,6 +58,13 @@
 					</ul>
 				</div>
 			</div>
+		    <split></split>
+		    <div class="info">
+		    	<h1 class="title">商家信息</h1>
+		    	<ul>
+		    		<li class="info-item" v-for="info in seller.infos">{{info}}</li>
+		    	</ul>
+		    </div>
 		</div>
 	</div>
 </template>
@@ -107,10 +114,15 @@
 						let margin = 6;
 						let width = (picWidth + margin) * this.seller.pics.length - margin;
 						this.$refs.piclist.style.width = width + 'px';
-						this.picScroll = new BScroll(this.$refs.picwrapper, {
+						if(!this.picScroll){
+							this.picScroll = new BScroll(this.$refs.picwrapper, {
 							scrollX: true,
 							eventPassthrough: 'vertical'
 						});
+						}else{
+							this.picScroll.refresh();
+						}
+						
 					}
 				})
 
@@ -298,5 +310,25 @@
 	
 	.pic-list .pic-item:last-child {
 		margin: 0;
+	}
+	.seller .info{
+		padding: 18px 18px 0 18px;
+		color: rgb(7, 17, 27);
+	}
+	.info .title{
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(7,17,27,0.1);
+		line-height: 14px;
+		font-size: 14px;
+	}
+	.info .info-item{
+		padding: 16px 12px;
+		line-height: 16px;
+		border-bottom: 1px solid rgba(7,17,27,0.1);
+		font-size: 12px;
+		
+	}
+	.info .info-item:last-child{
+		border: none;
 	}
 </style>
