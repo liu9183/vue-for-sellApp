@@ -171,23 +171,23 @@
 		background-repeat: no-repeat;
 	}
 	
-	.icon.decrease {
+	.content .support .icon.decrease {
 		background-image: url(decrease_1@2x.png);
 	}
 	
-	.icon.discount {
+	.content .support .icon.discount {
 		background-image: url(discount_1@2x.png);
 	}
 	
-	.icon.guarantee {
+	.content .support .icon.guarantee {
 		background-image: url(guarantee_1@2x.png);
 	}
 	
-	.icon.invoice {
+	.content .support .icon.invoice {
 		background-image: url(invoice_1@2x.png);
 	}
 	
-	.icon.special {
+	.content .support .icon.special {
 		background-image: url(special_1@2x.png);
 	}
 	
@@ -344,7 +344,7 @@
 		background-repeat: no-repeat;
 	}
 	
-	.icon.decrease {
+	.detail-main .supports .support-item .icon.decrease {
 		background-image: url(decrease_2@2x.png);
 	}
 	

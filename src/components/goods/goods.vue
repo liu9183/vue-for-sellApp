@@ -208,23 +208,23 @@
 		background-repeat: no-repeat;
 	}
 	
-	.icon.decrease {
+	.menu-item .text .icon.decrease {
 		background-image: url(decrease_3@2x.png);
 	}
 	
-	.icon.discount {
+	.menu-item .text .icon.discount {
 		background-image: url(discount_3@2x.png);
 	}
 	
-	.icon.guarantee {
+	.menu-item .text .icon.guarantee {
 		background-image: url(guarantee_3@2x.png);
 	}
 	
-	.icon.invoice {
+	.menu-item .text .icon.invoice {
 		background-image: url(invoice_3@2x.png);
 	}
 	
-	.icon.special {
+	.menu-item .text .icon.special {
 		background-image: url(special_3@2x.png);
 	}
 	
