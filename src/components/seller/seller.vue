@@ -28,6 +28,10 @@
 						</div>
 					</li>
 				</ul>
+				<div class="favorite" @click="toggleFavorite">
+					<span class="icon-favorite" :class="{'active':favorite}"></span>
+					<span class="text">{{favoriteText}}</span>
+				</div>
 
 			</div>
 			<split></split>
@@ -71,12 +75,25 @@
 
 <script>
 	import BScroll from 'better-scroll';
+	import {saveToLocal,loadFromLocal} from '../../common/js/store.js';
 	import star from '../star/star.vue';
 	import split from '../split/split.vue'
 	export default {
 		props: {
 			seller: {
 				type: Object
+			}
+		},
+		data(){
+			return{
+				favorite:(()=>{
+					return loadFromLocal(this.seller.id,'favorite',false);
+				})()
+			};
+		},
+		computed:{
+			favoriteText(){
+				return this.favorite?'已收藏':'收藏';
 			}
 		},
 		created() {
@@ -95,6 +112,14 @@
 		},
 
 		methods: {
+			toggleFavorite(event){
+				if(!event._constructed){
+					return;
+				}
+				this.favorite=!this.favorite;
+				saveToLocal(this.seller.id, 'favorite', this.favorite);//……………………………………
+				
+			},
 			_initScroll() {
 				this.$nextTick(() => { //……………………………………
 					if(!this.scroll) {
@@ -147,6 +172,7 @@
 	}
 	
 	.seller .overview {
+		position: relative;
 		padding: 18px;
 	}
 	
@@ -208,7 +234,29 @@
 	.block .content .stress {
 		font-size: 24px;
 	}
-	
+	.seller .overview .favorite{
+		position: absolute;
+		right: 11px;
+		top: 18px;
+		width: 50px;
+		text-align: center;
+	}
+	.favorite .icon-favorite{
+		display: block;
+		margin-bottom: 1px;
+		line-height: 24px;
+		font-size: 24px;
+		color: #d4d6d9;
+		
+	}
+	.favorite .icon-favorite.active{
+		color: rgb(240,20,20);
+	}
+	.favorite .text{
+		line-height: 10px;
+		font-size: 10px;
+		color: rgb(77,25,93);
+	}
 	.seller .bulletin {
 		padding: 18px 18px 0 18px;
 	}
@@ -331,4 +379,5 @@
 	.info .info-item:last-child{
 		border: none;
 	}
+	
 </style>
