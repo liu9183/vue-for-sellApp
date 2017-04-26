@@ -2,7 +2,7 @@
 ## goods page ##
 ![](http://i.imgur.com/cBp5zuw.gif)
 ## ratings page ##
-![](http://i.imgur.com/22XTXaV.gif)
+![](http://i.imgur.com/22XTXaV.gif)  
 ## seller page ##
 ![](http://i.imgur.com/PdGF8TP.gif)
 ## info wrapper ##
