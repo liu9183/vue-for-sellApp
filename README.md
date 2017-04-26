@@ -1,21 +1,9 @@
-# sellapp
-
-> my app
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# results show #
+## goods page ##
+![](http://i.imgur.com/cBp5zuw.gif)
+## ratings page ##
+![](http://i.imgur.com/xJH5dGf.gif)
+## seller page ##
+![](http://i.imgur.com/PdGF8TP.gif)
+## info wrapper ##
+![](http://i.imgur.com/NCtUOO1.gif)
